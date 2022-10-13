@@ -1,10 +1,10 @@
-<%= form_with(model: create_group_bill) do |form| %>
-  <% if create_group_bill.errors.any? %>
+<%= form_with(model: group_bill) do |form| %>
+  <% if group_bill.errors.any? %>
     <div style="color: red">
-      <h2><%= pluralize(create_group_bill.errors.count, "error") %> prohibited this create_group_bill from being saved:</h2>
+      <h2><%= pluralize(group_bill.errors.count, "error") %> prohibited this group_bill from being saved:</h2>
 
       <ul>
-        <% create_group_bill.errors.each do |error| %>
+        <% group_bill.errors.each do |error| %>
           <li><%= error.full_message %></li>
         <% end %>
       </ul>

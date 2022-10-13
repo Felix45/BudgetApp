@@ -18,19 +18,13 @@
 
   <div>
     <%= form.label :icon, style: "display: block" %>
-    <%= form.text_field :icon %>
+    <%= form.file_field :icon, accept: 'image/png,image/gif,image/jpeg,image/jpg', required: true %>
   </div>
 
   <div>
     <%= form.label :description, style: "display: block" %>
     <%= form.text_field :description %>
   </div>
-
-  <div>
-    <%= form.label :user_id, style: "display: block" %>
-    <%= form.text_field :user_id %>
-  </div>
-
   <div>
     <%= form.submit %>
   </div>
