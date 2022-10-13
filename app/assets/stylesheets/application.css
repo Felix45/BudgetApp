@@ -23,6 +23,6 @@ ul {
   background-color: var(--blue);
 }
 
-a {
+nav ul a {
   color: var(--white);
 }
