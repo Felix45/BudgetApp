@@ -6,9 +6,9 @@
   <% @bills.each do |bill| %>
     <%= render bill %>
     <p>
-      <%= link_to "Show this bill", bill %>
+      <%= link_to "Show this bill", group_bill_path(bill.group_id, bill) %>
     </p>
   <% end %>
 </div>
 
-<%= link_to "New bill", new_bill_path %>
+
