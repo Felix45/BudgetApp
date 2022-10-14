@@ -3,11 +3,13 @@ class BillsController < ApplicationController
 
   # GET /bills or /bills.json
   def index
-    @bills = Bill.all
+    @bills = current_user.bills.all
   end
 
   # GET /bills/1 or /bills/1.json
-  def show; end
+  def show
+    @bill = current_user.bills.find(params[:id])
+  end
 
   # GET /bills/new
   def new
@@ -65,6 +67,6 @@ class BillsController < ApplicationController
 
   # Only allow a list of trusted parameters through.
   def bill_params
-    params.require(:bill).permit(:name, :amount, :group_id)
+    params.require(:bill).permit(:name, :amount, :group_id, :description)
   end
 end
