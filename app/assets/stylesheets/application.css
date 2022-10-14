@@ -45,6 +45,10 @@ a {
   background-color: #5fb523;
 }
 
+.btn {
+  border-radius: 0;
+}
+
 .bg-green .btn {
   border: 2px solid var(--white);
 }
@@ -55,10 +59,6 @@ nav ul a {
 
 .logo {
   font-weight: 800;
-}
-
-.btn {
-  border-radius: 0;
 }
 
 form .form-group .form-control {
@@ -88,7 +88,7 @@ form .form-group .form-control {
   left: 0;
   top: 0;
   bottom: 0;
-  padding: 0px;
+  padding: 0;
   width: 0;
   z-index: 3;
   overflow-x: hidden;
