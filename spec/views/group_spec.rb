@@ -1,8 +1,10 @@
 require 'rails_helper'
 RSpec.describe 'groups/new', type: :feature do
   before :each do
-    @user = User.create(name: 'Felix Ouma', email: "#{DateTime.now.to_i}@gmail.com", password: 'password', bio: 'bio', password_confirmation: 'password')
-    @group = @user.groups.create(name: 'group 1', icon: 'http://localhost:3000/icon.png', description: 'description', user_id: @user.id)
+    @user = User.create(name: 'Felix Ouma', email: "#{DateTime.now.to_i}@gmail.com", password: 'password', bio: 'bio',
+                        password_confirmation: 'password')
+    @group = @user.groups.create(name: 'group 1', icon: 'http://localhost:3000/icon.png', description: 'description',
+                                 user_id: @user.id)
 
     visit(new_user_session_path)
     fill_in 'user[email]', with: @user.email
