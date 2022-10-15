@@ -64,6 +64,7 @@ test:
   username: postgres
   # password: 
   password:
+  strict: false
 
 # As with config/credentials.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
