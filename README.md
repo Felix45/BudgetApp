@@ -4,6 +4,8 @@
 
 > This is a Ruby on Rails mobile web application where you can manage your budget: you have a list of transactions associated with a category, so that you can see how much money you spent on what.
 
+## Live Demo
+[Live Demo >>](https://felix-budget-app.herokuapp.com/)
 
 ## Built With
 
@@ -76,7 +78,8 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to [Microverse](https://bit.ly/MicroverseTN) for giving me this project to work on
+- Special thanks to [Microverse](https://bit.ly/MicroverseTN) for giving me this project to work on
+- Special thanks to  [Gregoire Vella on Behance.](https://www.behance.net/gregoirevella) the designer whose design has been use on this project
 
 ## 📝 License
 
